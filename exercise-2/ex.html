@@ -51,7 +51,14 @@
       <div>
         <div class="info-two">
           Sinh ngày: <span class="char">(*)</span> <input class="date" type="date" />Quốc tịch:<span class="char">(*)</span>
-          <label><input type="text" /></label>
+          <form action="">
+            <select name = "name">
+              <option [selected] value = "value">Việt Nam</option>
+              <option [selected] value = "value">United Kingdom</option>
+              <option [selected] value = "value">China</option>
+              <option [selected] value = "value">USA</option>
+              </select>   
+          </form>
         </div>
         <div class="position">
             Chức danh: <span class="char">(*)</span><input type="name" />

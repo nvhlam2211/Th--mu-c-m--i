@@ -92,14 +92,21 @@ section input {
     margin-left: 33px;
 }
 /* end .firstName */
+.info-two{
+    display: flex;
+    align-items: center;
+}
 .info-two input{
     width: 350px;
 }
 .info-two .date{
     margin-left: 27px;
 }
-.info-two  label{
-    margin-left: 32px;
+.info-two select{
+    width: 350px;
+    height: 30px;
+    margin-left: 160px;
+    outline: none;
 }
 .position input{
    margin-left: 23px;
