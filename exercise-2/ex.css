@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    outline: none;
+}
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+.char {
+    color: red;
+}
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header .straight-line {
+    width: 100px;
+    height: 0;
+    border: 1px dashed black;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+header h2 {
+    width: 380px;
+    text-align: center;
+    line-height: 35px;
+}
+/*end header*/
+section {
+    padding-left: 150px;
+}
+section input{
+    width: 70%;
+    border-top: none;
+    border-right: none;
+    outline: none;
+}
+section input:nth-child(1){
+    margin-left: 119.5px;
+}
+.title {
+    margin-left: -10px;
+}
+section input {
+    margin-left: 46px;
+}
+.adress input{
+    margin-left: 51.5px;
+}
+.phone-number input{
+    width: 350px;
+}
+.phone-number input:nth-child(1){
+    margin-left: 41px;
+}
+.phone-number .fax{
+    margin-left: 164px;
+}
+/*end .phone-number*/
+.info input{
+    width: 350px;
+}
+.info input:nth-child(1){
+    margin-left: 25px;
+}
+.info .day{
+    margin-left: 138px;
+}
+/*end .info*/
+.number {
+   width: 500px;
+  display: flex;
+  align-items: center;
+}
+.number input {
+    margin-left: 53px;
+}
+/* end .number */
+.first-lastName input{
+    margin-left: 33px;
+}
+/* end .firstName */
+.info-two input{
+    width: 350px;
+}
+.info-two .date{
+    margin-left: 27px;
+}
+.info-two  label{
+    margin-left: 32px;
+}
+.position input{
+   margin-left: 23px;
+}
+/*end .info-two*/
+.info-three input{
+    width: 350px;
+}
+.info-three .number-three{
+    margin-left: 2px;
+}
+.info-three label {
+    margin-left: 44px;
+}
+/*end .info-three*/
