@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    .container {
+        width: 100%;
+        height: 40px;
+        background: rgba(172, 171, 171, 0.299);
+        border-bottom: 1px solid silver;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 10px 20px 8px;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        color: rgb(29, 70, 235);
+    }   
+}
+section {
+    .content {
+        display: flex;
+        gap: 20px;
+    }
+    h2 {
+        padding: 40px 10px;
+    }
+    .table-left{
+        width: 200px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+        border: 1px solid rgba(192, 192, 192, 0.433);
+        .col-1 {
+         width: 200px;
+         height: 20px; 
+         background: rgba(172, 171, 171, 0.151);
+        }
+        p {
+            padding-left: 10px;
+            padding-bottom: 5px;
+        }
+    }
+    .content-right {
+        p:nth-child(1) {
+            padding-bottom: 25px;
+        }
+    }
+    .table-right-top{
+        width: 850px;
+        height: auto;
+        border: 2px solid rgba(192, 192, 192, 0.467);
+        p {
+            background: rgba(211, 210, 210, 0.137);
+            padding: 15px 35px;
+            border-top: 1px solid rgba(192, 192, 192, 0.452);
+        }
+        p:nth-child(4){
+            padding-left: 15px;
+        }
+        p:nth-child(5){
+            padding-left: 50px;
+        }
+        h3 {
+            padding: 8px;
+        }
+        button{
+            width: 60px;
+            height: 25px;
+            margin-left: 60px;
+            border-radius: 4px;
+        }
+        button:hover{
+            background: pink;
+            color: green;
+        }
+        .name:focus{
+            border:2px solid rgba(29, 70, 235, 0.867);
+        }
+    }
+    .content-right-bot {
+        margin-top: 15px;
+        table, td {
+            width: 500px;
+            padding: 2px;
+            border: 2px solid rgba(192, 192, 192, 0.544);
+            border-collapse: collapse;
+            color: rgba(0, 0, 0, 0.712);
+            .info {
+            font-weight: 600;
+            }
+         }
+         
+    }
+}
