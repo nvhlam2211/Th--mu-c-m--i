@@ -34,14 +34,15 @@ section {
         padding: 40px 10px;
     }
     .table-left{
-        width: 200px;
+        width: 201px;
         margin-left: 10px;
         margin-bottom: 30px;
-        border: 1px solid rgba(192, 192, 192, 0.433);
+        border: 2px solid rgba(192, 192, 192, 0.433);
         .col-1 {
          width: 200px;
          height: 20px; 
          background: rgba(172, 171, 171, 0.151);
+         border: 1px solid rgba(192, 192, 192, 0.345);
         }
         p {
             padding-left: 10px;
@@ -60,7 +61,7 @@ section {
         p {
             background: rgba(211, 210, 210, 0.137);
             padding: 15px 35px;
-            border-top: 1px solid rgba(192, 192, 192, 0.452);
+            border: 1px solid rgba(192, 192, 192, 0.452);
         }
         p:nth-child(4){
             padding-left: 15px;
