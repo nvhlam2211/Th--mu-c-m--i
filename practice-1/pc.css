@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 24px;
+}
+body {
+    background: #CCCCCC;
+}
+.menu{
+    background: #444;
+}
+.menu ul {
+    display: flex;
+    justify-content: center;
+}
+.menu ul li {
+    height: 40px;
+    padding: 20px;
+    line-height: 40px;
+}
+.menu ul li a {
+    color: #fff;
+}
+.menu li:hover {
+    background-color: green;
+}
+section h2, i{
+    padding: 20px 10px;
+}
+section p {
+    padding: 10px 10px;
+}
+footer {
+    background: #444;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .char {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: relative;
+}
+footer .char span {
+    position: absolute;
+    top: -5px;
+    left: 5px;
+}
