@@ -6,7 +6,7 @@ body{
    margin: 0 auto;
 }
 header{
-    font-family: forte, Arial, sans-serif;
+    font-family: Forte, Arial, sans-serif;
 
 }
 h1{
@@ -38,7 +38,7 @@ height: 300px;
 border: none;
 border-radius: 10px;
 }
-.article-contentar{
+.article-content{
     margin: 15px 0;
     height: 300px;
 }
@@ -59,6 +59,9 @@ a:first-child{
     margin: 5px 2px;
     padding: 7px 10px 4px;
     size: 30px;
+}
+p:nth-child(3){
+    color: #fff;
 }
 a title{
     Color: #7CB3E9;
@@ -85,7 +88,8 @@ figure{
     height: 300px;
     width: 500px;
     margin-left: 15px;
-    border-radius: 10px;
+    border-radius: 13px;
+    margin-top: 0;
 }
 footer{
     border-top: 3px solid #142830;
@@ -93,5 +97,4 @@ footer{
     margin-bottom: 30px;
     text-align: center;
     size: 20px;
-
 }
