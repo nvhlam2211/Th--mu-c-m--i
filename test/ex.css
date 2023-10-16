@@ -1,0 +1,23 @@
+body {
+    position: relative;
+}
+input {
+    display: none;
+}
+.quick {
+    width: 200px;
+    height: 20px;
+    border: 2px solid silver;
+    position: absolute;
+    left: 50px;
+}
+.table {
+    width: 200px;
+    border: 2px solid silver;
+    border-top: none;
+    position: absolute;
+    left: -1px;
+}
+#click:checked ~ label ~ .table {
+    display: none;
+}
