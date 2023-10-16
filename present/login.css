@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    outline: none;
+}
+.login .form {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    gap: 15px;
+    z-index: 1;
+    background: #fff;
+}
+.login-header {
+    display: flex;
+    justify-content: space-between;
+}
+.login-body {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+input, .chose  {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 10px;
+    box-sizing: border-box;
+
+}
+.close {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.username {
+    position: relative;
+}
+.name {
+    position: absolute;
+    top: 58px;
+    left: 110px;
+    pointer-events: none;
+    background: #fff;
+}
+.username:focus ~ .name,.username:valid ~ .name {
+    top: 33px;
+    color: rgb(0, 119, 255);
+    transition: all 0.25s ease;
+    font-size: 0.9rem;
+}
+.username:focus {
+    border: 2px solid rgb(0, 119, 255);
+}
+.password {
+    position: relative;
+}
+.pass {
+    position: absolute;
+    top: 132px;
+    left: 110px;
+    pointer-events: none;
+    background: #fff;
+}
+.password:focus ~ .pass, .password:valid ~ .pass {
+    top: 110px;
+    color: rgb(0, 119, 255);
+    transition: all 0.25s ease;
+    font-size: 0.9rem;
+}
+.password:focus {
+    border: 2px solid rgb(0, 119, 255);
+}
+.overlay {
+    position: fixed;
+    background: rgba(28, 28, 28, 0.525);
+    inset: 0;
+}
+.login {
+    display: none;
+}
+.login.show {
+    display: block;
+}
