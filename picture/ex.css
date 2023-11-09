@@ -1,0 +1,13 @@
+body {
+    /* background: red; */
+}
+.picture{
+    position: relative;
+}
+.logo{
+    position: absolute;
+    width: 25px;
+    border-radius: 50%;
+    top: 15px;
+    left: 205px;
+}
