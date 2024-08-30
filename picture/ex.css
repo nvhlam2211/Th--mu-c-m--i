@@ -3,11 +3,13 @@ body {
 }
 .picture{
     position: relative;
+    margin-left: 500px;
+    margin-top: 100px;
 }
 .logo{
     position: absolute;
-    width: 25px;
+    width: 50px;
     border-radius: 50%;
     top: 15px;
-    left: 205px;
+    left: 185px;
 }

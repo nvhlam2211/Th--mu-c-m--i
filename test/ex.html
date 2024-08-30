@@ -2,28 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./ex.css" />
+    <title>Trang web bán hàng</title>
   </head>
   <body>
-    <div class="quick">
-      <input type="checkbox" id="click" />
-      <label for="click">
-        <i class="fa-regular fa-square-minus"></i>
-        <span>Quicklinks</span>
-      </label>
-      <div class="table">
-        <p>link1</p> 
-        <p>link2</p>
-        <p>link3</p>
-        <p>link4</p>
-        <p>link5</p>
-      </div>
-    </div>
+    <h1>Trang web bán hàng</h1>
+    <ul>
+      <% products.forEach(product => { %>
+      <li><%= product.name %> - $<%= product.price %></li>
+      <% }); %>
+    </ul>
   </body>
 </html>
