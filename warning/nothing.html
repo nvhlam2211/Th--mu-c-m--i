@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite Text Typing and Erasing Effect</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+      }
+
+      #output {
+        font-size: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #333;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="output"></div>
+
+    <script>
+      const messages = [
+        { text: "Hello !", color: "#e74c3c" },
+        { text: "I'm Lâm.", color: "#3498db" },
+        { text: "Nice to meet you !", color: "#2ecc71" },
+      ];
+      const typingSpeed = 100;
+      const eraseSpeed = 50;
+      let messageIndex = 0;
+      let i = 0;
+      let isErasing = false;
+
+      function typeEffect() {
+        const outputElement = document.getElementById("output");
+        const currentMessage = messages[messageIndex];
+
+        outputElement.style.color = currentMessage.color;
+
+        if (!isErasing) {
+          if (i < currentMessage.text.length) {
+            outputElement.textContent += currentMessage.text.charAt(i);
+            i++;
+            setTimeout(typeEffect, typingSpeed);
+          } else {
+            setTimeout(() => {
+              isErasing = true;
+              typeEffect();
+            }, 1000);
+          }
+        } else {
+          if (i > 0) {
+            outputElement.textContent = currentMessage.text.substring(0, i - 1);
+            i--;
+            setTimeout(typeEffect, eraseSpeed);
+          } else {
+            isErasing = false;
+            messageIndex++;
+            if (messageIndex < messages.length) {
+              setTimeout(typeEffect, 1000);
+            } else {
+              messageIndex = 0;
+              setTimeout(typeEffect, 1000);
+            }
+          }
+        }
+      }
+      typeEffect();
+    </script>
+  </body>
+</html>
